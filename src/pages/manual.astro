@@ -5,20 +5,31 @@ import Link from "../components/linkmanualheader.astro";
 ---
 
 <Layout title="Manual">
-  <header class="flex flex-col justify-center items-center">
-    <h1 class="text-2xl font-bold p-24">Seguidad y Alta Fiabilidad</h1>
-    <nav
-      class="flex justify-start items-center text-white text-center flex-wrap w-full"
+  <header
+    class="flex flex-col justify-center items-center relative h-[600px] overflow-hidden"
+  >
+    <img
+      src="img/guide-main/seguridad informática y cómo implementarla.webp"
+      alt="seguridad informática y cómo implementarla.webp"
+      class="w-full h-full"
+    />
+    <h1
+      class="text-2xl md:text-4xl font-bold p-12 md:p-24 bg-slate-100 absolute rounded bg-opacity-70"
     >
-      <Link href="/" title="Inicio" />
-      <Link href="/Phishing" title="Phishing" />
-      <Link href="/DoS" title="DoS" />
-      <Link href="/Troyano" title="Troyano" />
-      <Link href="/Backdoors" title="Backdoors" />
-      <Link href="/Spyware" title="Spyware" />
-      <Link href="/Stealers" title="Stealers" />
-    </nav>
+      Seguidad y Alta Fiabilidad
+    </h1>
   </header>
+  <nav
+    class="flex justify-start items-center text-white text-center flex-wrap w-full"
+  >
+    <Link href="/" title="Inicio" />
+    <Link href="/Phishing" title="Phishing" />
+    <Link href="/DoS" title="DoS" />
+    <Link href="/Troyano" title="Troyano" />
+    <Link href="/Backdoors" title="Backdoors" />
+    <Link href="/Spyware" title="Spyware" />
+    <Link href="/Stealers" title="Stealers" />
+  </nav>
   <main class="py-12 px-4 mx-4">
     <section id="introducion" class="mb-12">
       <h2 class="text-4xl font-semibold mb-4">
