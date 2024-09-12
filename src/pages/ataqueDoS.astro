@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/footer.astro";
+import HeaderManual from "../components/headermanual.astro";
+---
+
+<Layout title="Ataque a Dedos">
+  <HeaderManual
+    href="/public/img/guide-main/dos-attack.webp"
+    alt="ataque-a-dedos.webp"
+  />
+
+  <section id="introduccion" class="m-12">
+    <h1 class="text-4xl font-semibold mb-4">
+      ¿Qué es el ataque a dedos y cómo afecta a los usuarios?
+    </h1>
+    <p class="text-lg leading-relaxed mb-12">
+      El ataque a dedos es una técnica utilizada por hackers para obtener acceso
+      no autorizado a cuentas y sistemas. Los atacantes usan métodos como
+      keylogging, fuerza bruta y adivinación de contraseñas para comprometer las
+      credenciales de los usuarios. Este tipo de ataque puede tener
+      consecuencias graves, incluyendo el robo de identidad, acceso a
+      información sensible y pérdida de datos.
+    </p>
+  </section>
+
+  <section id="protegerse" class="m-12">
+    <h1 class="text-4xl font-semibold mb-4">
+      Pasos sencillos para protegerse del ataque a dedos
+    </h1>
+    <p class="text-lg leading-relaxed mb-12">
+      Protegerse contra el ataque a dedos requiere una combinación de buenas
+      prácticas de seguridad y el uso de herramientas de protección. Aquí hay
+      algunos pasos que puedes seguir:
+    </p>
+    <p class="text-lg leading-relaxed mb-12">
+      1. Utiliza contraseñas fuertes y únicas para cada una de tus cuentas.
+      Evita usar información personal que sea fácil de adivinar.
+    </p>
+    <p class="text-lg leading-relaxed mb-12">
+      2. Habilita la autenticación de dos factores (2FA) siempre que sea
+      posible. Esto añade una capa adicional de seguridad al requerir un segundo
+      factor además de tu contraseña.
+    </p>
+    <p class="text-lg leading-relaxed mb-12">
+      3. Mantén tu software y sistemas actualizados. Las actualizaciones
+      frecuentemente incluyen parches de seguridad que protegen contra nuevas
+      vulnerabilidades.
+    </p>
+  </section>
+
+  <section id="herramientas_de_seguridad" class="m-12">
+    <h1 class="text-4xl font-semibold mb-4">
+      Herramientas de seguridad para prevenir el ataque a dedos
+    </h1>
+    <p class="text-lg leading-relaxed mb-12">
+      El uso de herramientas de seguridad puede ser crucial para protegerte
+      contra los ataques a dedos. Algunas herramientas recomendadas incluyen:
+    </p>
+    <p class="text-lg leading-relaxed mb-12">
+      1. Gestores de contraseñas: Estas herramientas generan y almacenan
+      contraseñas fuertes, asegurando que no tengas que recordar múltiples
+      contraseñas complejas.
+    </p>
+    <p class="text-lg leading-relaxed mb-12">
+      2. Software anti-keylogging: Programas diseñados para detectar y prevenir
+      keyloggers que intentan capturar tus pulsaciones de teclado.
+    </p>
+    <p class="text-lg leading-relaxed mb-12">
+      3. Monitores de actividad: Aplicaciones que supervisan la actividad de tu
+      sistema y te alertan sobre comportamientos sospechosos o no autorizados.
+    </p>
+    <p class="text-lg leading-relaxed mb-12">
+      Para más información y recursos sobre phishing, visita
+      <a
+        href="https://owasp.org/www-community/attacks/Denial_of_Service"
+        class="text-blue-500 underline hover:text-blue-300"
+        target="_blank">OWASP</a
+      >.
+    </p>
+  </section>
+
+  <Footer />
+</Layout>
