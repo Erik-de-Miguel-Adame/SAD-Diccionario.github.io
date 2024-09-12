@@ -1,0 +1,106 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/footer.astro";
+import Link from "../components/linkmanualheader.astro";
+---
+
+<Layout title="Manual">
+  <header class="flex flex-col justify-center items-center">
+    <h1 class="text-2xl font-bold p-24">Seguidad y Alta Fiabilidad</h1>
+    <nav
+      class="flex justify-start items-center text-white text-center flex-wrap w-full"
+    >
+      <Link href="/" title="Inicio" />
+      <Link href="/Phishing" title="Phishing" />
+      <Link href="/DoS" title="DoS" />
+      <Link href="/Troyano" title="Troyano" />
+      <Link href="/Backdoors" title="Backdoors" />
+      <Link href="/Spyware" title="Spyware" />
+      <Link href="/Stealers" title="Stealers" />
+    </nav>
+  </header>
+  <main class="py-12 px-4 mx-4">
+    <section id="introducion" class="mb-12">
+      <h2 class="text-4xl font-semibold mb-4">
+        Bienvenido a Nuestro Manual de Seguridad
+      </h2>
+      <p class="text-lg leading-relaxed">
+        ¡Hola y bienvenidos a nuestro sitio web dedicado a la seguridad y alta
+        fiabilidad! En un mundo cada vez más digital, proteger tus sistemas y
+        datos es más crucial que nunca. Este manual ha sido diseñado para
+        ofrecerte una guía completa sobre las principales amenazas de seguridad
+        y las mejores prácticas para mantener tu información segura.
+      </p>
+    </section>
+
+    <section id="Objetivos del Manual" class="mb-12">
+      <h2 class="text-4xl font-semibold mb-4">Objetivos del Manual</h2>
+      <p class="text-lg leading-relaxed">
+        En nuestro manual, encontrarás una variedad de secciones que cubren:
+      </p>
+      <ul class="list-disc list-inside mt-4">
+        <li>
+          <strong>Phishing: </strong>Técnicas de suplantación de identidad y
+          cómo evitar caer en estas trampas.
+        </li>
+
+        <li>
+          <strong>Denegación de Servicio (DoS): </strong>Cómo proteger tus
+          recursos en línea contra ataques que buscan saturar tu sistema.
+        </li>
+        <li>
+          <strong>Troyanos: </strong>Cómo identificar y remover software
+          malicioso que se oculta dentro de aplicaciones aparentemente
+          inofensivas.
+        </li>
+        <li>
+          <strong>Backdoors: </strong>Métodos para detectar y cerrar puertas
+          traseras que permiten accesos no autorizados.
+        </li>
+        <li>
+          <strong>Spyware: </strong>Cómo defenderte de software que espía y roba
+          información personal.
+        </li>
+
+        <li>
+          <strong>Stealers: </strong>Estrategias para protegerte contra malware
+          que roba credenciales y datos personales.
+        </li>
+      </ul>
+    </section>
+
+    <section id="Recursos Adicionales" class="mb-12">
+      <h2 class="text-4xl font-semibold mb-4">Recursos Adicionales</h2>
+      <p class="text-lg leading-relaxed">
+        Además de la información contenida en el manual, te proporcionaremos
+        recursos adicionales como:
+      </p>
+      <ul class="list-disc list-inside mt-4">
+        <li>Enlaces a herramientas de seguridad recomendadas.</li>
+        <li>
+          Artículos y estudios de caso sobre las últimas tendencias en
+          seguridad.
+        </li>
+        <li>
+          Consejos y mejores prácticas actualizadas para mantenerte protegido.
+        </li>
+      </ul>
+    </section>
+
+    <section id="Contacto" class="mb-12">
+      <h2 class="text-4xl font-semibold mb-4">Contacto</h2>
+      <p class="text-lg leading-relaxed">
+        Si tienes alguna pregunta o necesitas asistencia adicional, no dudes en
+        ponerte en contacto con nosotros. Estamos aquí para ayudarte a mantener
+        la seguridad y fiabilidad de tus sistemas.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Email: <a href="" class="text-pink-600 hover:underline"
+          >support@example.com</a
+        >
+      </p>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

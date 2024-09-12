@@ -1,0 +1,94 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/indexcards.astro";
+import Footer from "../components/footer.astro";
+---
+
+<Layout title="Guia de Seguidad y Alta Disponibilidad.">
+  <header class="flex flex-col justify-center items-center text-center">
+    <img
+      src="/img/index/header-fondo.jpg"
+      alt="header fondo"
+      class="w-full h-full"
+    />
+    <div
+      class="flex flex-col justify-center items-center absolute m-auto p-4 bg-pink-600 bg-opacity-80 rounded text-white"
+    >
+      <h1 class="font-bold text-xl md:text-4xl lg:text-6xl">
+        Diccionario de Seguridad
+      </h1>
+      <p class="ont-bold text-xl md:text-2xl lg:text-2xl">
+        Erik de Miguel Adame
+      </p>
+    </div>
+  </header>
+
+  <div
+    class="flex flex-col justify-center items-center p-8 m-4 md:p-24 md:m-24 text-center"
+  >
+    <h2 class="text-2xl text-pink-600 font-bold mb-4">
+      Términos Clave en Ciberseguridad y Ataques Informáticos
+    </h2>
+    <p>
+      Esta sección define conceptos esenciales relacionados con la seguridad
+      digital y los ataques informáticos. Incluye técnicas y herramientas
+      utilizadas por ciberdelincuentes para comprometer sistemas, robar
+      información y causar daños económicos. Conocer estos términos es
+      fundamental para entender cómo protegerse contra amenazas en el entorno
+      digital.
+    </p>
+  </div>
+
+  <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 p-4 gap-4">
+    <Card
+      href="/img/index/phising-img.webp"
+      alt="phishing index foto"
+      titulo="Phishing"
+      descripcion="Engaño en línea para robar información personal y financiera."
+    />
+    <Card
+      href="/img/index/troyano-img.webp"
+      alt="Troyano index foto"
+      titulo="Troyan"
+      descripcion="Engaño en línea para robar información personal y financiera."
+    />
+    <Card
+      href="/img/index/Atack-img-DDoS.webp"
+      alt="Ataque DoS index foto"
+      titulo="Ataque DoD"
+      descripcion="Engaño en línea para robar información personal y financiera."
+    />
+    <Card
+      href="/img/index/backdoor.webp"
+      alt="Backdoors index foto"
+      titulo="Backdoors"
+      descripcion="Accesos ocultos para entrar en sistemas y robar información o causar daño."
+    />
+    <Card
+      href="/img/index/spyware.webp"
+      alt="Backdoors index foto"
+      titulo="Spyware"
+      descripcion="Software que espía y roba información personal para beneficio económico del atacante."
+    />
+    <Card
+      href="/img/index/stealers.webp"
+      alt="Backdoors index foto"
+      titulo="Stealers"
+      descripcion="Programas que roban datos sensibles, como contraseñas, para vender o usarlos de forma fraudulenta."
+    />
+  </section>
+
+  <div
+    class="flex flex-col justify-center items-center p-4 m-4 md:p-12 md:m-12"
+  >
+    <h2 class="text-2xl text-pink-600 font-bold mb-4">¿Quieres Saber Más?</h2>
+    <p>Descubre todos los detalles en mi guía documentada.</p>
+    <a
+      href="/manual"
+      class="inline-block px-12 py-2 m-4 rounded-full bg-pink-600 hover:bg-pink-800 transition-all ease-in-out text-white"
+      >Ver guía completa</a
+    >
+  </div>
+
+  <Footer />
+</Layout>
