@@ -1,14 +1,15 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Footer from "../components/footer.astro";
-import HeaderManual from "../components/headermanual.astro";
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/footer.astro";
+import HeaderManual from "../../components/headermanual.astro";
+import Imgbackdoor from "../../assets/img/guide-main/backdoor.jpg";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Backdoors">
-  <HeaderManual
-    href="/public/img/guide-main/backdoor.webp"
-    alt="backdoor-attack.webp"
-  />
+  <HeaderManual title="Backdoors">
+    <Image src={Imgbackdoor} alt="backdoor.webp" width={1920} height={1536} />
+  </HeaderManual>
 
   <section id="introduccion" class="m-12">
     <h1 class="text-4xl font-semibold mb-4">

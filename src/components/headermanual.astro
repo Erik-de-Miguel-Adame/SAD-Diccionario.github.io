@@ -1,24 +1,26 @@
 ---
 import Link from "../components/linkmanualheader.astro";
-
+const { title } = Astro.props;
 interface Props {
-  href: string;
-  alt: string;
+  title: string;
 }
-
-const { href, alt } = Astro.props;
 ---
 
 <header class="flex flex-col justify-center items-center">
-  <div class="flex w-full h-[600px]">
-    <img src={href} alt={alt} class="w-full h-full" />
+  <div class="flex justify-center items-center w-full relative">
+    <slot />
+    <header
+      class="text-2xl md:text-4xl font-bold bg-slate-100 absolute rounded bg-opacity-70 max-w-80 md:max-w-[1200px] p-4 text-center"
+    >
+      <h1 class="break-words">{title}</h1>
+    </header>
   </div>
   <nav
     class="flex justify-center items-center w-full text-center flex-wrap text-white"
   >
     <Link href="/manual" title="Inicio" />
     <Link href="/phishing" title="Phishing" />
-    <Link href="/ataqueDoS" title="DoS" />
+    <Link href="/DoS" title="DoS" />
     <Link href="/troyano" title="Troyano" />
     <Link href="/backdoors" title="Backdoors" />
     <Link href="/spyware" title="Spyware" />

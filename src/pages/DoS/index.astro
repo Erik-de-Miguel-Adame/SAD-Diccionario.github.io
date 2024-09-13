@@ -1,14 +1,15 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Footer from "../components/footer.astro";
-import HeaderManual from "../components/headermanual.astro";
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/footer.astro";
+import HeaderManual from "../../components/headermanual.astro";
+import { Image } from "astro:assets";
+import ImageDoS from "../../assets/img/guide-main/dos-attack.jpg";
 ---
 
 <Layout title="Ataque a Dedos">
-  <HeaderManual
-    href="/public/img/guide-main/dos-attack.webp"
-    alt="ataque-a-dedos.webp"
-  />
+  <HeaderManual title="DoS Attack">
+    <Image src={ImageDoS} alt="dos-attack.jpg" width={1920} height={1282} />
+  </HeaderManual>
 
   <section id="introduccion" class="m-12">
     <h1 class="text-4xl font-semibold mb-4">

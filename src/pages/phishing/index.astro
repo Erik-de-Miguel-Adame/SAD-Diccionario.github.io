@@ -1,14 +1,20 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Footer from "../components/footer.astro";
-import HeaderManual from "../components/headermanual.astro";
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/footer.astro";
+import HeaderManual from "../../components/headermanual.astro";
+import { Image } from "astro:assets";
+import Imgphishing from "../../assets/img/guide-main/phishing-attack.jpg";
 ---
 
 <Layout title="Phishing">
-  <HeaderManual
-    href="/public/img/guide-main/phishing-attack.webp"
-    alt="phishing-attack.webp"
-  />
+  <HeaderManual title="Phishing">
+    <Image
+      src={Imgphishing}
+      alt="phishing-attack.jpeg"
+      width={1920}
+      height={1280}
+    />
+  </HeaderManual>
 
   <section id="introduccion" class="m-12">
     <h1 class="text-4xl font-semibold mb-4">

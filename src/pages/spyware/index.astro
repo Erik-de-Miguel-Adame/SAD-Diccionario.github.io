@@ -1,14 +1,15 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Footer from "../components/footer.astro";
-import HeaderManual from "../components/headermanual.astro";
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/footer.astro";
+import HeaderManual from "../../components/headermanual.astro";
+import { Image } from "astro:assets";
+import ImageSpyware from "../../assets/img/guide-main/spyware.jpg";
 ---
 
 <Layout title="Spyware">
-  <HeaderManual
-    href="/public/img/guide-main/spyware.jpg"
-    alt="spyware-attack.webp"
-  />
+  <HeaderManual title="Spyware">
+    <Image src={ImageSpyware} alt="spyware.jpg" width={1920} height={1324} />
+  </HeaderManual>
 
   <section id="introduccion" class="m-12">
     <h1 class="text-4xl font-semibold mb-4">

@@ -1,14 +1,15 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Footer from "../components/footer.astro";
-import HeaderManual from "../components/headermanual.astro";
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/footer.astro";
+import HeaderManual from "../../components/headermanual.astro";
+import { Image } from "astro:assets";
+import ImageStealers from "../../assets/img/guide-main/stealer.jpg";
 ---
 
 <Layout title="Stealers">
-  <HeaderManual
-    href="/public/img/guide-main/stealer.webp"
-    alt="stealer-attack.webp"
-  />
+  <HeaderManual title="Stealers">
+    <Image src={ImageStealers} alt="stealer.jpg" width={1920} height={1324} />
+  </HeaderManual>
 
   <section id="introduccion" class="m-12">
     <h1 class="text-4xl font-semibold mb-4">

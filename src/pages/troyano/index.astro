@@ -1,14 +1,15 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Footer from "../components/footer.astro";
-import HeaderManual from "../components/headermanual.astro";
+import Layout from "../../layouts/Layout.astro";
+import Footer from "../../components/footer.astro";
+import HeaderManual from "../../components/headermanual.astro";
+import { Image } from "astro:assets";
+import ImageTroyano from "../../assets/img/guide-main/troyano.jpg";
 ---
 
 <Layout title="Troyanos">
-  <HeaderManual
-    href="/public/img/guide-main/troyano.jpg"
-    alt="troyano-attack.webp"
-  />
+  <HeaderManual title="Toyano">
+    <Image src={ImageTroyano} alt="troyano.jpg" width={1920} height={1080} />
+  </HeaderManual>
 
   <section id="introduccion" class="m-12">
     <h1 class="text-4xl font-semibold mb-4">
