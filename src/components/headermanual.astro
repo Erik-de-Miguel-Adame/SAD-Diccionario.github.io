@@ -1,5 +1,6 @@
 ---
 import Link from "../components/linkmanualheader.astro";
+import NavegationMenu from "../components/navmenu.astro";
 const { title } = Astro.props;
 interface Props {
   title: string;
@@ -15,15 +16,5 @@ interface Props {
       <h1 class="break-words">{title}</h1>
     </header>
   </div>
-  <nav
-    class="flex justify-center items-center w-full text-center flex-wrap text-white"
-  >
-    <Link href="/manual" title="Inicio" />
-    <Link href="/phishing" title="Phishing" />
-    <Link href="/DoS" title="DoS" />
-    <Link href="/troyano" title="Troyano" />
-    <Link href="/backdoors" title="Backdoors" />
-    <Link href="/spyware" title="Spyware" />
-    <Link href="/stealers" title="Stealers" />
-  </nav>
 </header>
+<NavegationMenu />

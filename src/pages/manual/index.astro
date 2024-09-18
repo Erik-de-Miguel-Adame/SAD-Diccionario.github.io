@@ -1,9 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Footer from "../../components/footer.astro";
-import Link from "../../components/linkmanualheader.astro";
 import { Image } from "astro:assets";
 import Image1 from "../../assets/img/guide-main/headerimg.avif";
+import NavegationMenu from "../../components/navmenu.astro";
 ---
 
 <Layout title="Manual">
@@ -22,17 +22,7 @@ import Image1 from "../../assets/img/guide-main/headerimg.avif";
       Seguridad y Alta Fiabilidad
     </h1>
   </header>
-  <nav
-    class="flex justify-start items-center text-white text-center flex-wrap w-full"
-  >
-    <Link href="/" title="Inicio" />
-    <Link href="/phishing" title="Phishing" />
-    <Link href="/DoS" title="DoS" />
-    <Link href="/troyano" title="Troyano" />
-    <Link href="/backdoors" title="Backdoors" />
-    <Link href="/spyware" title="Spyware" />
-    <Link href="/stealers" title="Stealers" />
-  </nav>
+  <NavegationMenu />
   <main class="py-12 px-4 mx-4">
     <section id="introduccion" class="mb-12">
       <h2 class="text-4xl font-semibold mb-4">
