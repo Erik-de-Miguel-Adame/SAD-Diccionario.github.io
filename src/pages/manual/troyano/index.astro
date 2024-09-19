@@ -1,0 +1,145 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+import Header from "../../../components/header.astro";
+import imgTroyano from "../../../assets/img/manual/troyanos.jpg";
+---
+
+<Layout title="Troyanos">
+  <Header subTitulo="Troyanos" src={imgTroyano.src} alt="header" />
+  <Nav />
+  <section id="troyano" class="mb-12 p-4 m-4">
+    <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
+      Troyanos
+    </h2>
+    <p class="leading-relaxed">
+      Un troyano es un tipo de software malicioso que se oculta dentro de
+      programas aparentemente inofensivos. A diferencia de los virus o gusanos,
+      los troyanos no se replican a sí mismos; en cambio, engañan al usuario
+      para que los instale, a menudo disfrazados como aplicaciones legítimas o
+      archivos de sistema. Una vez instalado, un troyano puede permitir a los
+      atacantes acceder de manera remota al sistema de la víctima, robar
+      información, instalar más malware o realizar acciones maliciosas sin el
+      conocimiento del usuario.
+    </p>
+    <p class="leading-relaxed">
+      Existen diferentes tipos de troyanos, cada uno con su propio conjunto de
+      funciones y objetivos. Algunos pueden ser utilizados para robar
+      credenciales de acceso, mientras que otros pueden ser diseñados para
+      espiar las actividades del usuario o crear puertas traseras para el acceso
+      no autorizado.
+    </p>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Tipos de Troyanos
+    </h3>
+    <p class="leading-relaxed">
+      Los troyanos se pueden clasificar en varias categorías según su
+      funcionalidad:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Troyanos de acceso remoto:</strong> Permiten a los atacantes controlar
+        el sistema de forma remota, facilitando la instalación de software adicional
+        o el robo de datos.
+      </li>
+      <li>
+        <strong>Troyanos de robo de información:</strong> Diseñados específicamente
+        para robar credenciales de acceso y otra información sensible.
+      </li>
+      <li>
+        <strong>Troyanos de descarga:</strong> Se utilizan para descargar e instalar
+        otros tipos de malware en el sistema de la víctima.
+      </li>
+      <li>
+        <strong>Troyanos de espionaje:</strong> Capturan la actividad del usuario,
+        como pulsaciones de teclas y capturas de pantalla, para recopilar información
+        confidencial.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Reconocer un Troyano
+    </h3>
+    <p class="leading-relaxed">
+      Identificar la presencia de un troyano puede ser complicado, pero hay
+      algunas señales de advertencia comunes:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Rendimiento lento:</strong> Si tu computadora se vuelve inusualmente
+        lenta, podría ser un signo de malware en ejecución.
+      </li>
+      <li>
+        <strong>Actividad inusual:</strong> Revisa si hay programas desconocidos
+        que se inician automáticamente o conexiones de red sospechosas.
+      </li>
+      <li>
+        <strong>Pop-ups y anuncios extraños:</strong> Si ves anuncios inesperados
+        o ventanas emergentes que no tienen sentido, podría ser un indicio de un
+        troyano.
+      </li>
+      <li>
+        <strong>Problemas de seguridad:</strong> Cambios inesperados en configuraciones
+        de seguridad, como cortafuegos desactivados o software antivirus que no responde.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Protegerse de los Troyanos
+    </h3>
+    <p class="leading-relaxed">
+      Para protegerte de los troyanos y minimizar el riesgo de infección,
+      considera las siguientes medidas:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Instala un software antivirus:</strong> Asegúrate de que tu software
+        antivirus esté actualizado y activo para detectar y eliminar amenazas.
+      </li>
+      <li>
+        <strong>Evita descargas de fuentes no confiables:</strong> No descargues
+        software de sitios web no verificados o desconocidos.
+      </li>
+      <li>
+        <strong>Mantén tu sistema operativo actualizado:</strong> Las actualizaciones
+        suelen incluir parches de seguridad que protegen contra vulnerabilidades.
+      </li>
+      <li>
+        <strong>Ten cuidado con los correos electrónicos sospechosos:</strong> No
+        abras archivos adjuntos ni hagas clic en enlaces de correos electrónicos
+        de remitentes desconocidos.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Recursos Adicionales sobre Troyanos
+    </h3>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <a
+          href="https://www.cisco.com/c/en/us/products/security/what-is-a-trojan.html"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Guía de Cisco sobre Troyanos</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.kaspersky.com/resource-center/threats/trojans"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Información de Kaspersky sobre Troyanos</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.malwarebytes.com/trojans/"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Malwarebytes: Todo sobre Troyanos</a
+        >
+      </li>
+    </ul>
+  </section>
+
+  <Footer />
+</Layout>

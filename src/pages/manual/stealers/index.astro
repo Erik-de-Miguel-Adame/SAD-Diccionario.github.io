@@ -1,0 +1,118 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+import Header from "../../../components/header.astro";
+import imgStealer from "../../../assets/img/manual/ladron.jpg";
+---
+
+<Layout title="Stealers">
+  <Header subTitulo="Stealers" src={imgStealer.src} alt="header" />
+  <Nav />
+  <section id="stealers" class="mb-12 p-4 m-4">
+    <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
+      Stealers
+    </h2>
+    <p class="leading-relaxed">
+      Los stealers son un tipo de malware diseñado específicamente para robar
+      información sensible, como contraseñas, datos de tarjetas de crédito y
+      otros datos personales. Estos programas pueden estar diseñados para
+      capturar información directamente de navegadores, aplicaciones de
+      mensajería y otros software donde se almacena información privada.
+    </p>
+    <p class="leading-relaxed">
+      Los stealers son frecuentemente entregados a través de correos
+      electrónicos de phishing, descargas de software malicioso o como parte de
+      otro tipo de malware, como troyanos o spyware.
+    </p>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Tipos de Stealers
+    </h3>
+    <p class="leading-relaxed">Algunos ejemplos de stealers incluyen:</p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Stealers de navegador:</strong> Capturan datos como nombres de usuario
+        y contraseñas almacenadas en navegadores web.
+      </li>
+      <li>
+        <strong>Stealers de aplicaciones:</strong> Diseñados para robar información
+        de aplicaciones específicas, como clientes de correo electrónico o aplicaciones
+        de mensajería.
+      </li>
+      <li>
+        <strong>Stealers de clipboard:</strong> Capturan datos que se copian en el
+        portapapeles, como contraseñas y direcciones de criptomonedas.
+      </li>
+      <li>
+        <strong>Keyloggers:</strong> Aunque principalmente se consideran un tipo
+        de spyware, muchos keyloggers también roban información sensible.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Reconocer Stealers
+    </h3>
+    <p class="leading-relaxed">
+      Los síntomas de un sistema comprometido por un stealer pueden incluir:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Inicios de sesión sospechosos:</strong> Notificaciones de inicio
+        de sesión desde dispositivos o ubicaciones desconocidas.
+      </li>
+      <li>
+        <strong>Transacciones inusuales:</strong> Movimientos en cuentas bancarias
+        o de criptomonedas que no reconoces.
+      </li>
+      <li>
+        <strong>Problemas de rendimiento:</strong> El dispositivo puede volverse
+        lento o experimentar bloqueos frecuentes.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Protegerse de los Stealers
+    </h3>
+    <p class="leading-relaxed">
+      Para protegerte contra los stealers, ten en cuenta lo siguiente:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Usar autenticación de dos factores:</strong> Esto añade una capa
+        adicional de seguridad a tus cuentas.
+      </li>
+      <li>
+        <strong>Mantener un software de seguridad actualizado:</strong> Un buen antivirus
+        puede detectar y eliminar stealers antes de que causen daño.
+      </li>
+      <li>
+        <strong
+          >Ser cauteloso con los correos electrónicos y enlaces desconocidos:</strong
+        > No hagas clic en enlaces de remitentes que no conozcas.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Recursos Adicionales sobre Stealers
+    </h3>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <a
+          href="https://www.cisco.com/c/en/us/products/security/what-is-a-stalkerware.html"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Guía de Cisco sobre Stealers</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.malwarebytes.com/stealer/"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Malwarebytes: Información sobre Stealers</a
+        >
+      </li>
+    </ul>
+  </section>
+
+  <Footer />
+</Layout>

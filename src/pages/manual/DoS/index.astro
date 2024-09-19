@@ -1,0 +1,168 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+import Header from "../../../components/header.astro";
+import imgDos from "../../../assets/img/manual/dos.png";
+---
+
+<Layout title="DoS">
+  <Header
+    subTitulo="Denegación de Servicio (DoS)"
+    src={imgDos.src}
+    alt="header"
+  />
+  <Nav />
+  <section id="denegacion-de-servicio" class="mb-12 p-4 m-4">
+    <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
+      Denegación de Servicio (DoS)
+    </h2>
+    <p class="leading-relaxed">
+      Un ataque de Denegación de Servicio (DoS) tiene como objetivo hacer que un
+      recurso o servicio en línea sea inaccesible al inundarlo con un volumen
+      excesivo de solicitudes. Estos ataques pueden resultar en la interrupción
+      total del servicio, afectando negativamente a la disponibilidad del sitio
+      web o servicio en cuestión. Los ataques DoS pueden ser perpetrados
+      mediante diversas técnicas que buscan agotar los recursos del servidor o
+      la red.
+    </p>
+    <p class="leading-relaxed">
+      En un ataque DoS volumétrico, el atacante envía grandes cantidades de
+      tráfico para consumir todo el ancho de banda disponible del servidor
+      objetivo. Los ataques basados en protocolos explotan vulnerabilidades en
+      los protocolos de red para agotar los recursos del servidor. Los ataques
+      de capa de aplicación se dirigen a servicios específicos en la capa de
+      aplicación, como servidores web, para sobrecargar y bloquear el servicio.
+    </p>
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Tipos de Ataques DoS
+    </h3>
+    <p class="leading-relaxed">
+      Los ataques de DoS pueden clasificarse en diferentes categorías según la
+      técnica utilizada:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Volumétricos:</strong> Ataques que envían grandes volúmenes de tráfico
+        para consumir todo el ancho de banda disponible. Ejemplos incluyen ataques
+        de amplificación DNS y ataques UDP flood.
+      </li>
+      <li>
+        <strong>Protocolos:</strong> Ataques que explotan vulnerabilidades en los
+        protocolos de red para agotar los recursos del servidor o de la red. Un ejemplo
+        común es el ataque SYN flood, que utiliza el protocolo TCP para sobrecargar
+        el servidor.
+      </li>
+      <li>
+        <strong>Aplicación:</strong> Ataques que se centran en la capa de aplicación,
+        saturando servicios específicos. Ejemplos incluyen ataques HTTP flood, que
+        envían un gran número de solicitudes HTTP al servidor web para hacerlo inoperable.
+      </li>
+      <li>
+        <strong>Amplificación:</strong> Utiliza servidores vulnerables para amplificar
+        el tráfico hacia el objetivo, haciendo que el ataque sea mucho más poderoso.
+        Ejemplos incluyen ataques de amplificación NTP y DNS.
+      </li>
+    </ul>
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Identificar un Ataque DoS
+    </h3>
+    <p class="leading-relaxed">
+      Identificar un ataque DoS puede ser desafiante, pero hay señales comunes
+      que pueden indicar que estás bajo ataque:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Rendimiento lento:</strong> El sitio web o servicio se vuelve extremadamente
+        lento o inoperable, con tiempos de respuesta inusualmente largos.
+      </li>
+      <li>
+        <strong>Interrupciones en el servicio:</strong> El sitio web o servicio está
+        completamente inactivo o no se puede acceder a él en absoluto.
+      </li>
+      <li>
+        <strong>Tráfico inusual:</strong> Un aumento repentino e inesperado en el
+        tráfico de red o en las solicitudes al servidor puede ser una señal de un
+        ataque en curso.
+      </li>
+      <li>
+        <strong>Registros de error:</strong> Revisa los registros del servidor para
+        buscar patrones de tráfico sospechosos o errores que indiquen un ataque.
+      </li>
+    </ul>
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Protegerse de los Ataques DoS
+    </h3>
+    <p class="leading-relaxed">
+      Para protegerte de los ataques DoS y minimizar su impacto, considera las
+      siguientes estrategias:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Implementa medidas de mitigación:</strong> Utiliza servicios de mitigación
+        de DDoS (Distributed Denial of Service) que ayudan a filtrar el tráfico malicioso
+        antes de que llegue a tu red.
+      </li>
+      <li>
+        <strong>Configura cortafuegos y filtros:</strong> Ajusta tus cortafuegos
+        y filtros de tráfico para bloquear el tráfico sospechoso y no deseado.
+      </li>
+      <li>
+        <strong>Distribuye la carga:</strong> Utiliza redes de distribución de contenido
+        (CDN) y balanceadores de carga para distribuir el tráfico y reducir el impacto
+        de un ataque.
+      </li>
+      <li>
+        <strong>Monitorea el tráfico:</strong> Implementa herramientas de monitoreo
+        de tráfico que te ayuden a identificar patrones inusuales y ataques potenciales
+        en tiempo real.
+      </li>
+      <li>
+        <strong>Ten un plan de respuesta:</strong> Desarrolla un plan de respuesta
+        a incidentes que incluya procedimientos para manejar y mitigar ataques DoS.
+      </li>
+    </ul>
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Recursos Adicionales sobre DoS
+    </h3>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <a
+          href="https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Guía de Cloudflare sobre ataques DDoS</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.imperva.com/learn/ddos/"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Información de Imperva sobre DDoS</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.sans.org/white-papers/37035/"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Investigación sobre ataques DoS de SANS</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.csoonline.com/article/3513104/what-is-a-ddos-attack-how-it-works-and-how-to-prevent-one.html"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Cómo prevenir ataques DDoS según CSO Online</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.nortonlifelock.com/blogs/norton-protection/what-is-a-ddos-attack"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Qué es un ataque DDoS y cómo protegerse según Norton</a
+        >
+      </li>
+    </ul>
+  </section>
+
+  <Footer />
+</Layout>

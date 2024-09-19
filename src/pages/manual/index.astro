@@ -1,109 +1,98 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Footer from "../../components/footer.astro";
-import { Image } from "astro:assets";
-import Image1 from "../../assets/img/guide-main/headerimg.avif";
-import NavegationMenu from "../../components/navmenu.astro";
+import Nav from "../../components/nav.astro";
+import Header from "../../components/header.astro";
+import imgWorld from "../../assets/img/manual/world.jpg";
 ---
 
 <Layout title="Manual">
-  <header
-    class="flex flex-col justify-center items-center relative overflow-hidden"
-  >
-    <Image
-      src={Image1}
-      alt="seguridad informática y cómo implementarla.webp"
-      width={2670}
-      height={1780}
-    />
-    <h1
-      class="text-2xl md:text-4xl font-bold p-12 md:p-24 bg-slate-100 absolute rounded bg-opacity-70"
-    >
-      Seguridad y Alta Fiabilidad
-    </h1>
-  </header>
-  <NavegationMenu />
-  <main class="py-12 px-4 mx-4">
-    <section id="introduccion" class="mb-12">
-      <h2 class="text-4xl font-semibold mb-4">
+  <Header subTitulo="Introducción" src={imgWorld.src} alt="header" />
+
+  <Nav />
+
+  <section id="introducion" class="mb-12 p-4 m-4">
+    <main>
+      <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
         Bienvenido a Nuestro Manual de Seguridad
       </h2>
-      <p class="text-lg leading-relaxed">
+      <p class="leading-relaxed">
         ¡Hola! Estamos encantados de tenerte aquí en nuestro sitio web dedicado
         a la seguridad y alta fiabilidad. En este mundo digital, proteger tus
         sistemas y datos es más importante que nunca. Hemos creado este manual
         para ofrecerte una guía completa sobre las principales amenazas de
         seguridad y cómo puedes mantener tu información segura.
       </p>
-    </section>
+    </main>
+  </section>
+  <section id="objetivos-del-manual" class="mb-12 p-4 m-4">
+    <h2 class="text-2xl text-violet-800 dark:text-pink-600 mb-4 underline">
+      Objetivos del Manual
+    </h2>
+    <p class="">En este manual, encontrarás diversas secciones que cubren:</p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Phishing: </strong>Técnicas de suplantación de identidad y cómo
+        evitar caer en estas trampas.
+      </li>
+      <li>
+        <strong>Denegación de Servicio (DoS): </strong>Cómo proteger tus
+        recursos en línea contra ataques que buscan saturar tu sistema.
+      </li>
+      <li>
+        <strong>Troyanos: </strong>Cómo identificar y remover software malicioso
+        que se oculta dentro de aplicaciones aparentemente inofensivas.
+      </li>
+      <li>
+        <strong>Backdoors: </strong>Métodos para detectar y cerrar puertas
+        traseras que permiten accesos no autorizados.
+      </li>
+      <li>
+        <strong>Spyware: </strong>Cómo defenderte de software que espía y roba
+        información personal.
+      </li>
+      <li>
+        <strong>Stealers: </strong>Estrategias para protegerte contra malware
+        que roba credenciales y datos personales.
+      </li>
+    </ul>
+  </section>
 
-    <section id="objetivos-del-manual" class="mb-12">
-      <h2 class="text-4xl font-semibold mb-4">Objetivos del Manual</h2>
-      <p class="text-lg leading-relaxed">
-        En este manual, encontrarás diversas secciones que cubren:
-      </p>
-      <ul class="list-disc list-inside mt-4">
-        <li>
-          <strong>Phishing: </strong>Técnicas de suplantación de identidad y
-          cómo evitar caer en estas trampas.
-        </li>
-        <li>
-          <strong>Denegación de Servicio (DoS): </strong>Cómo proteger tus
-          recursos en línea contra ataques que buscan saturar tu sistema.
-        </li>
-        <li>
-          <strong>Troyanos: </strong>Cómo identificar y remover software
-          malicioso que se oculta dentro de aplicaciones aparentemente
-          inofensivas.
-        </li>
-        <li>
-          <strong>Backdoors: </strong>Métodos para detectar y cerrar puertas
-          traseras que permiten accesos no autorizados.
-        </li>
-        <li>
-          <strong>Spyware: </strong>Cómo defenderte de software que espía y roba
-          información personal.
-        </li>
-        <li>
-          <strong>Stealers: </strong>Estrategias para protegerte contra malware
-          que roba credenciales y datos personales.
-        </li>
-      </ul>
-    </section>
+  <section id="recursos-adicionales" class="mb-12 p-4 m-4">
+    <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
+      Recursos Adicionales
+    </h2>
+    <p class="leading-relaxed">
+      Además de la información contenida en el manual, te proporcionamos
+      recursos adicionales como:
+    </p>
+    <ul class="">
+      <li>Enlaces a herramientas de seguridad recomendadas.</li>
+      <li>
+        Artículos y estudios de caso sobre las últimas tendencias en seguridad.
+      </li>
+      <li>
+        Consejos y mejores prácticas actualizadas para mantenerte protegido.
+      </li>
+    </ul>
+  </section>
 
-    <section id="recursos-adicionales" class="mb-12">
-      <h2 class="text-4xl font-semibold mb-4">Recursos Adicionales</h2>
-      <p class="text-lg leading-relaxed">
-        Además de la información contenida en el manual, te proporcionamos
-        recursos adicionales como:
-      </p>
-      <ul class="list-disc list-inside mt-4">
-        <li>Enlaces a herramientas de seguridad recomendadas.</li>
-        <li>
-          Artículos y estudios de caso sobre las últimas tendencias en
-          seguridad.
-        </li>
-        <li>
-          Consejos y mejores prácticas actualizadas para mantenerte protegido.
-        </li>
-      </ul>
-    </section>
-
-    <section id="contacto" class="mb-12">
-      <h2 class="text-4xl font-semibold mb-4">Contacto</h2>
-      <p class="text-lg leading-relaxed">
-        Si tienes alguna pregunta o necesitas asistencia adicional, no dudes en
-        ponerte en contacto con nosotros. Estamos aquí para ayudarte a mantener
-        la seguridad y fiabilidad de tus sistemas.
-      </p>
-      <p class="text-lg leading-relaxed">
-        Email: <a
-          href="mailto:support@example.com"
-          class="text-pink-600 hover:underline">support@example.com</a
-        >
-      </p>
-    </section>
-  </main>
-
+  <section id="contacto" class="mb-12 p-4 m-4">
+    <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
+      Contacto
+    </h2>
+    <p class="leading-relaxed">
+      Si tienes alguna pregunta o necesitas asistencia adicional, no dudes en
+      ponerte en contacto con nosotros. Estamos aquí para ayudarte a mantener la
+      seguridad y fiabilidad de tus sistemas.
+    </p>
+    <p class="leading-relaxed">
+      Email: <a
+        href="mailto:support@example.com"
+        class="text-violet-600 dark:text-pink-600 hover:underline"
+        >support@example.com</a
+      >
+    </p>
+  </section>
   <Footer />
 </Layout>

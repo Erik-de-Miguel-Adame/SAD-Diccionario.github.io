@@ -1,0 +1,116 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+import Header from "../../../components/header.astro";
+import imgBackdoor from "../../../assets/img/manual/backdoor.webp";
+---
+
+<Layout title="Backdoors">
+  <Header subTitulo="Backdoors" src={imgBackdoor.src} alt="header" />
+  <Nav />
+  <section id="backdoors" class="mb-12 p-4 m-4">
+    <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
+      Backdoors
+    </h2>
+    <p class="leading-relaxed">
+      Un backdoor es un método que permite el acceso no autorizado a un sistema
+      o aplicación, evadiendo las medidas de seguridad estándar. Los atacantes
+      suelen utilizar backdoors para mantener el acceso a un sistema después de
+      haberlo comprometido. Estos pueden ser creados deliberadamente por los
+      desarrolladores para realizar mantenimiento o, más comúnmente, instalados
+      por malware.
+    </p>
+    <p class="leading-relaxed">
+      Los backdoors pueden ser extremadamente peligrosos, ya que permiten a un
+      atacante controlar el sistema de forma remota, robar información sensible,
+      o utilizar el sistema como parte de una red de bots para realizar ataques
+      más grandes.
+    </p>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Funciona un Backdoor
+    </h3>
+    <p class="leading-relaxed">
+      Un backdoor puede ser implantado en diferentes formas, como:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Software malicioso:</strong> A menudo se incluye como parte de un
+        virus o troyano que el usuario instala sin saberlo.
+      </li>
+      <li>
+        <strong>Vulnerabilidades en el software:</strong> Algunas aplicaciones tienen
+        fallos de seguridad que permiten a los atacantes crear un backdoor.
+      </li>
+      <li>
+        <strong>Acceso físico:</strong> Si un atacante tiene acceso físico a un dispositivo,
+        puede instalar un backdoor manualmente.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Detectar Backdoors
+    </h3>
+    <p class="leading-relaxed">
+      Detectar un backdoor puede ser complicado. Algunos indicios incluyen:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Actividades inusuales:</strong> Cambios no autorizados en la configuración
+        del sistema o cuentas de usuario.
+      </li>
+      <li>
+        <strong>Tráfico de red sospechoso:</strong> Aumentos inexplicables en la
+        actividad de red, especialmente hacia destinos desconocidos.
+      </li>
+      <li>
+        <strong>Aplicaciones desconocidas:</strong> Presencia de software que no
+        recuerdas haber instalado.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Protegerse de Backdoors
+    </h3>
+    <p class="leading-relaxed">
+      Para protegerte contra los backdoors, considera:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Mantener software actualizado:</strong> Asegúrate de que todos tus
+        programas estén actualizados con los últimos parches de seguridad.
+      </li>
+      <li>
+        <strong>Utilizar software antivirus:</strong> Mantén un antivirus activo
+        y actualizado para detectar malware.
+      </li>
+      <li>
+        <strong>Revisar regularmente los registros:</strong> Monitorea los registros
+        de actividad del sistema para detectar cualquier comportamiento inusual.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Recursos Adicionales sobre Backdoors
+    </h3>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <a
+          href="https://www.csoonline.com/article/3276502/what-is-a-backdoor.html"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Guía de CSO sobre Backdoors</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.kaspersky.com/resource-center/threats/backdoor"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Información de Kaspersky sobre Backdoors</a
+        >
+      </li>
+    </ul>
+  </section>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,53 @@
+---
+import LinkNav from "./linkNav.astro";
+---
+
+<nav
+  class="bg-violet-600 dark:bg-pink-600 flex justify-start items-center text-white"
+>
+  <button id="abrirMenu" class="text-4xl md:hidden p-4">&#8801;</button>
+  <button
+    id="cerrarMenu"
+    class="hidden text-4xl absolute top-10 left-10 z-10 p-4">&times;</button
+  >
+  <ul
+    id="menu"
+    class="hidden md:flex flex-wrap flex-col md:flex-row justify-center items-center absolute top-0 left-0 md:relative w-0 h-screen overflow-hidden bg-black md:w-full md:h-auto md:bg-transparent"
+  >
+    <LinkNav href="/" title="Inicio" />
+    <LinkNav href="/manual" title="Manual" />
+    <LinkNav href="/manual/phishing" title="Phishing" />
+    <LinkNav href="/manual/DoS" title="DoS" />
+    <LinkNav href="/manual/troyano" title="Troyano" />
+    <LinkNav href="/manual/backdoors" title="Backdoors" />
+    <LinkNav href="/manual/spyware" title="Spyware" />
+    <LinkNav href="/manual/stealers" title="Stealers" />
+    <LinkNav href="/manual/Koobface" title="Koobface" />
+    <LinkNav href="/manual/Botnet" title="Botnet" />
+    <LinkNav
+      href="/manual/Ataque de fuerza bruta"
+      title="Ataque de fuerza bruta"
+    />
+  </ul>
+</nav>
+<script type="module">
+  const menu = document.getElementById("menu");
+  const abrirMenu = document.getElementById("abrirMenu");
+  const cerrarMenu = document.getElementById("cerrarMenu");
+
+  abrirMenu.addEventListener("click", () => {
+    menu.style.width = "100%";
+    menu.classList.remove("hidden");
+    menu.classList.add("flex");
+    cerrarMenu.classList.remove("hidden");
+    cerrarMenu.classList.add("flex");
+  });
+
+  cerrarMenu.addEventListener("click", () => {
+    menu.style.width = "0";
+    menu.classList.remove("flex");
+    cerrarMenu.classList.remove("flex");
+    cerrarMenu.classList.add("hidden");
+    menu.classList.add("hidden");
+  });
+</script>

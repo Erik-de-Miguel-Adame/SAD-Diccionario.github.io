@@ -1,0 +1,138 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+import Header from "../../../components/header.astro";
+import imgPhishing from "../../../assets/img/manual/phishing.jpg";
+---
+
+<Layout title="Phishing">
+  <Header subTitulo="Phishing" src={imgPhishing.src} alt="header" />
+  <Nav />
+  <section id="phishing" class="mb-12 p-4 m-4">
+    <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
+      Phishing
+    </h2>
+    <p class="leading-relaxed">
+      El phishing es una técnica utilizada por ciberdelincuentes para engañar a
+      las personas y hacer que revelen información personal sensible, como
+      contraseñas y números de tarjeta de crédito. Los atacantes suelen enviar
+      correos electrónicos o mensajes que parecen provenir de fuentes legítimas,
+      como bancos o plataformas en línea, creando una falsa sensación de
+      confianza.
+    </p>
+    <p class="leading-relaxed">
+      Existen varias formas de phishing, y cada una utiliza diferentes técnicas
+      para atraer a las víctimas. Los ataques pueden ser muy sofisticados,
+      imitando correos electrónicos y sitios web reales, lo que dificulta la
+      identificación de la amenaza.
+    </p>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Tipos de Phishing
+    </h3>
+    <p class="leading-relaxed">
+      Los ataques de phishing se pueden clasificar en diferentes categorías:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Phishing por correo electrónico:</strong> Correos electrónicos fraudulentos
+        que parecen ser de organizaciones legítimas.
+      </li>
+      <li>
+        <strong>Phishing por SMS (Smishing):</strong> Mensajes de texto engañosos
+        que intentan robar información personal.
+      </li>
+      <li>
+        <strong>Phishing por voz (Vishing):</strong> Llamadas telefónicas que intentan
+        obtener información personal.
+      </li>
+      <li>
+        <strong>Phishing en redes sociales:</strong> Mensajes en plataformas sociales
+        que buscan engañar a los usuarios para que revelen datos.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Reconocer un Intento de Phishing
+    </h3>
+    <p class="leading-relaxed">
+      Para protegerte de ataques de phishing, es crucial saber cómo
+      identificarlos:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Errores gramaticales:</strong> Los mensajes de phishing a menudo
+        contienen errores de ortografía y gramática.
+      </li>
+      <li>
+        <strong>Enlaces sospechosos:</strong> Pasa el ratón sobre los enlaces para
+        verificar la URL antes de hacer clic.
+      </li>
+      <li>
+        <strong>Urgencia:</strong> Los atacantes suelen crear un sentido de urgencia
+        para que actúes rápidamente.
+      </li>
+      <li>
+        <strong>Solicitudes inusuales:</strong> Desconfía si te piden información
+        sensible que normalmente no compartirías.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Protegerse del Phishing
+    </h3>
+    <p class="leading-relaxed">
+      Para minimizar el riesgo de ser víctima de phishing, considera estas
+      estrategias:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Verifica siempre las URLs:</strong> Asegúrate de que el sitio web
+        sea auténtico antes de ingresar información personal.
+      </li>
+      <li>
+        <strong>Utiliza autenticación de dos factores:</strong> Añadir una capa adicional
+        de seguridad puede proteger tus cuentas incluso si tus credenciales se ven
+        comprometidas.
+      </li>
+      <li>
+        <strong>Mantén tu software actualizado:</strong> Asegúrate de que tu navegador
+        y software de seguridad estén siempre actualizados.
+      </li>
+      <li>
+        <strong>Desconfía de correos electrónicos no solicitados:</strong> Si no
+        esperabas un mensaje, verifica su autenticidad antes de responder.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Recursos Adicionales sobre Phishing
+    </h3>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <a
+          href="https://www.phishing.org/"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Información sobre phishing</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Guía de la FTC sobre phishing</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.actionfraud.police.uk/phonebusters"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Reporta intentos de phishing</a
+        >
+      </li>
+    </ul>
+  </section>
+
+  <Footer />
+</Layout>

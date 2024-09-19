@@ -1,0 +1,113 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+import Header from "../../../components/header.astro";
+import imgSpyware from "../../../assets/img/manual/spyware.jpg";
+---
+
+<Layout title="Spyware">
+  <Header subTitulo="Spyware" src={imgSpyware.src} alt="header" />
+  <Nav />
+  <section id="spyware" class="mb-12 p-4 m-4">
+    <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
+      Spyware
+    </h2>
+    <p class="leading-relaxed">
+      El spyware es un tipo de software malicioso que se instala en un
+      dispositivo sin el conocimiento del usuario con el fin de espiar sus
+      actividades. Este tipo de malware puede recopilar información personal,
+      como contraseñas, datos bancarios y hábitos de navegación, y enviarla a un
+      servidor remoto.
+    </p>
+    <p class="leading-relaxed">
+      A menudo, el spyware se instala como parte de otro software o se incluye
+      en descargas de sitios web no confiables. Una vez en el sistema, puede
+      operar en segundo plano, recopilando información sin que el usuario se dé
+      cuenta.
+    </p>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Tipos de Spyware
+    </h3>
+    <p class="leading-relaxed">Hay varios tipos de spyware, incluyendo:</p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Keyloggers:</strong> Capturan las pulsaciones de teclas del usuario
+        para robar contraseñas y otra información sensible.
+      </li>
+      <li>
+        <strong>Trojans:</strong> Aunque son conocidos por sus capacidades de acceso
+        remoto, algunos también pueden funcionar como spyware.
+      </li>
+      <li>
+        <strong>Adware:</strong> Aunque se utiliza principalmente para mostrar anuncios,
+        algunos adware puede rastrear la actividad de navegación del usuario.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Reconocer Spyware
+    </h3>
+    <p class="leading-relaxed">
+      Los signos de una infección de spyware pueden incluir:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Rendimiento lento del sistema:</strong> El dispositivo puede volverse
+        más lento de lo normal.
+      </li>
+      <li>
+        <strong>Anuncios invasivos:</strong> Aparecen anuncios emergentes o redirecciones
+        no solicitadas en el navegador.
+      </li>
+      <li>
+        <strong>Configuraciones cambiadas:</strong> Cambios inesperados en la configuración
+        del navegador o en las páginas de inicio.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Protegerse del Spyware
+    </h3>
+    <p class="leading-relaxed">
+      Para protegerte contra el spyware, considera estas recomendaciones:
+    </p>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <strong>Instala un software de seguridad:</strong> Utiliza un software antivirus
+        o antimalware que incluya protección contra spyware.
+      </li>
+      <li>
+        <strong>Ten cuidado al descargar:</strong> Descarga solo de fuentes confiables
+        y verifica las reseñas de los programas.
+      </li>
+      <li>
+        <strong>Utiliza bloqueadores de anuncios:</strong> Los bloqueadores de anuncios
+        pueden ayudar a prevenir la instalación de adware y spyware.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Recursos Adicionales sobre Spyware
+    </h3>
+    <ul class="list-disc list-inside mt-4">
+      <li>
+        <a
+          href="https://www.malwarebytes.com/spyware/"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Malwarebytes: Todo sobre Spyware</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.kaspersky.com/resource-center/threats/spyware"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Información de Kaspersky sobre Spyware</a
+        >
+      </li>
+    </ul>
+  </section>
+
+  <Footer />
+</Layout>

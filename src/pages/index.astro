@@ -1,33 +1,37 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/indexcards.astro";
+import Card from "../components/card.astro";
 import Footer from "../components/footer.astro";
-import { Image } from "astro:assets";
-import Image1 from "../assets/img/index/header-fondo.jpg";
+import img1 from "../assets/img/index/header-fondo.jpg";
+import img2 from "../assets/img/index/phising-img.webp";
+import img3 from "../assets/img/index/troyano-img.webp";
+import img4 from "../assets/img/index/Atack-img-DDoS.webp";
+import img5 from "../assets/img/index/backdoor.webp";
+import img6 from "../assets/img/index/spyware.webp";
+import img7 from "../assets/img/index/stealers.webp";
 ---
 
 <Layout title="Guia de Seguridad y Alta Disponibilidad.">
-  <header class="flex flex-col justify-center items-center text-center">
-    <Image src={Image1} alt="header-fondo.jpg" width={1920} height={1082} />
-    <div
-      class="flex flex-col justify-center items-center absolute m-auto p-4 bg-pink-600 bg-opacity-80 rounded text-white"
+  <header
+    class="w-full h-full flex flex-col justify-center items-center relative text-white"
+  >
+    <img src={img1.src} alt="header-fondo" class="w-full h-full" />
+    <main
+      class="w-[300px] p-6 rounded h-auto flex flex-col justify-center items-start absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-violet-600 bg-opacity-80 dark:bg-pink-600 dark:bg-opacity-80
+      gap-2"
     >
-      <h1 class="font-bold text-xl md:text-4xl lg:text-6xl">
-        Diccionario de Seguridad
+      <h1 class="text-2xl font-bold">
+        Guia de Seguridad y Alta Disponibilidad.
       </h1>
-      <p class="font-bold text-xl md:text-2xl lg:text-2xl">
-        Erik de Miguel Adame
-      </p>
-    </div>
+      <p class="italic">Erik de Miguel Adame</p>
+    </main>
   </header>
 
-  <div
-    class="flex flex-col justify-center items-center p-8 m-4 md:p-24 md:m-24 text-center"
-  >
-    <h2 class="text-2xl text-pink-600 font-bold mb-4">
+  <div class="flex flex-col justify-center items-center p-6 m-4">
+    <h1 class="text-2xl mb-4 text-center font-bold">
       Términos Clave en Ciberseguridad y Ataques Informáticos
-    </h2>
-    <p>
+    </h1>
+    <p class="-tracking-tight text-center text-gray-600 dark:text-gray-300">
       Esta sección define conceptos esenciales relacionados con la seguridad
       digital y los ataques informáticos. Incluye técnicas y herramientas
       utilizadas por ciberdelincuentes para comprometer sistemas, robar
@@ -37,18 +41,52 @@ import Image1 from "../assets/img/index/header-fondo.jpg";
     </p>
   </div>
 
-  <Card />
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+    <Card
+      src={img2.src}
+      alt="phising-img.webp"
+      title="Phishing"
+      description="Phishing es una técnica de engaño que se utiliza para robar información confidencial de usuarios. Esta técnica se basa en la manipulación de mensajes de correo electrónico para engañar a los usuarios y proporcionarles información falsa."
+    />
+    <Card
+      src={img3.src}
+      alt="troyano-img.webp"
+      title="Troyanos"
+      description="Engaño en línea para robar información personal y financiera."
+    />
+    <Card
+      src={img4.src}
+      alt="Atack-img-DDoS.webp"
+      title="Ataque DoS"
+      description="Ataque de Denegación de Servicio (DDoS) es un ataque que se utiliza para bloquear el acceso a un sitio web o servicio de Internet. Este ataque consiste en enviar una cantidad excesiva de tráfico a un sitio web, lo que provoca una pérdida de servicio y daño a la infraestructura de red."
+    />
+    <Card
+      src={img5.src}
+      alt="backdoors-img.webp"
+      title="Backdoors"
+      description="Backdoors son herramientas que se utilizan para acceder a sistemas informáticos sin autorización. Estas herramientas pueden ser utilizadas para acceder a sistemas de manera no autorizada, lo que puede ser útil para atacar sistemas y obtener acceso a información confidencial."
+    />
+    <Card
+      src={img6.src}
+      alt="backdoors-img.webp"
+      title="Spyware"
+      description="Spyware es un tipo de software que se utiliza para recopilar y rastrear información personal y financiera de los usuarios. Este tipo de software puede ser utilizado para robar información confidencial de los usuarios, incluyendo contraseñas, datos de pago, tarjetas de crédito y información personal."
+    />
+    <Card
+      src={img7.src}
+      alt="backdoors-img.webp"
+      title="Stealers"
+      description="Los Stealers son programas que se utilizan para robar información confidencial de los usuarios. Estos programas pueden ser utilizados para acceder a sistemas de manera no autorizada, lo que puede ser útil para atacar sistemas y obtener acceso a información confidencial."
+    />
+  </section>
 
-  <div
-    class="flex flex-col justify-center items-center p-4 m-4 md:p-12 md:m-12"
-  >
-    <h2 class="text-2xl text-pink-600 font-bold mb-4">¿Quieres Saber Más?</h2>
-    <p>Descubre todos los detalles en mi guía documentada.</p>
-    <a
-      href="/manual"
-      class="inline-block px-12 py-2 m-4 rounded-full bg-pink-600 hover:bg-pink-800 transition-all ease-in-out text-white"
-      >Ver guía completa</a
+  <div class="flex justify-center items-center p-6 m-4">
+    <h2
+      class="text-xl mb-4 text-center text-violet-600 dark:text-pink-600 font-bold"
     >
+      ¿Qué más puedo hacer?
+      <a href="/manual">Visita nuestra página de manual</a>
+    </h2>
   </div>
 
   <Footer />
