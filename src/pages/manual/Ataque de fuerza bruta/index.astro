@@ -1,0 +1,166 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+import Header from "../../../components/header.astro";
+import imgFuerzaBruta from "../../../assets/img/manual/ataque_fuerza_bruta.jpg";
+---
+
+<Layout title="Ataque de Fuerza Bruta">
+  <Header
+    subTitulo="¿Qué es un Ataque de Fuerza Bruta?"
+    src={imgFuerzaBruta.src}
+    alt="header"
+  />
+  <Nav />
+  <section
+    id="fuerza-bruta"
+    class="mb-12 p-4 m-4 bg-white dark:bg-gray-900 rounded-lg shadow-lg"
+  >
+    <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
+      ¿Qué es un Ataque de Fuerza Bruta?
+    </h2>
+    <p class="leading-relaxed text-gray-800 dark:text-gray-200">
+      Un **ataque de fuerza bruta** es una técnica utilizada por los
+      ciberdelincuentes para adivinar contraseñas o claves de acceso mediante la
+      prueba sistemática de todas las combinaciones posibles. A través de este
+      método, un atacante intenta ingresar a una cuenta o sistema probando todas
+      las contraseñas posibles hasta encontrar la correcta.
+    </p>
+    <p class="leading-relaxed text-gray-800 dark:text-gray-200 mt-4">
+      Este tipo de ataque depende principalmente de la potencia computacional y
+      el tiempo. Aunque en algunos casos el ataque puede llevar tiempo, las
+      contraseñas débiles o cortas hacen que los ataques de fuerza bruta sean
+      más efectivos. Los ataques de fuerza bruta pueden ser automatizados, lo
+      que permite realizar millones de intentos en poco tiempo.
+    </p>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Tipos de Ataques de Fuerza Bruta
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Fuerza Bruta Directa:</strong
+        > El atacante prueba todas las combinaciones posibles de caracteres hasta
+        encontrar la correcta. Es muy lento, pero efectivo contra contraseñas cortas.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Ataque de Diccionario:</strong
+        > Utiliza un diccionario de palabras comunes y frases como contraseñas. Este
+        tipo de ataque es más rápido que el ataque de fuerza bruta directa.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Fuerza Bruta con Precomputación (Rainbow Tables):</strong
+        > Utiliza tablas precomputadas con hashes de contraseñas comunes, lo que
+        acelera el proceso de adivinación de contraseñas.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Ataques Híbridos:</strong
+        > Una combinación de un ataque de diccionario y un ataque de fuerza bruta,
+        que prueba palabras comunes y sus variaciones, como contraseñas con números
+        añadidos o caracteres especiales.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Funciona un Ataque de Fuerza Bruta
+    </h3>
+    <p class="leading-relaxed text-gray-800 dark:text-gray-200">
+      El atacante utiliza un software especializado que automatiza el proceso de
+      prueba de contraseñas. Dependiendo de la complejidad de la contraseña,
+      este tipo de ataque puede tomar desde minutos hasta días o incluso
+      semanas. A menudo, el atacante intenta adivinar contraseñas de cuentas
+      como el correo electrónico, acceso a servidores, cuentas bancarias y otros
+      sistemas protegidos por contraseñas.
+    </p>
+    <p class="leading-relaxed text-gray-800 dark:text-gray-200 mt-4">
+      Para protegerse de estos ataques, es crucial usar contraseñas largas y
+      complejas que contengan una mezcla de letras mayúsculas, minúsculas,
+      números y caracteres especiales, lo que aumenta la dificultad de
+      adivinarlas mediante fuerza bruta.
+    </p>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Señales de un Ataque de Fuerza Bruta
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Intentos de acceso fallidos:</strong
+        > Un gran número de intentos fallidos de iniciar sesión en un sistema o cuenta
+        puede ser una señal de que se está llevando a cabo un ataque de fuerza bruta.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Bloqueo de cuentas:</strong
+        > Las cuentas bloqueadas debido a múltiples intentos de inicio de sesión
+        incorrectos son un indicio común de un ataque de fuerza bruta.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Actividad inusual en los registros:</strong
+        > Los registros de acceso pueden mostrar una gran cantidad de intentos fallidos
+        de inicio de sesión provenientes de una o varias direcciones IP.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Protegerse de los Ataques de Fuerza Bruta
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Usa contraseñas fuertes:</strong
+        > Asegúrate de que las contraseñas sean largas (al menos 12 caracteres) y
+        contengan una combinación de letras mayúsculas, minúsculas, números y caracteres
+        especiales.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Implementa autenticación multifactor:</strong
+        > Utiliza métodos de autenticación adicionales, como códigos enviados por
+        SMS o aplicaciones de autenticación, lo que dificulta que los atacantes accedan
+        incluso si adivinan la contraseña.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Limita los intentos de inicio de sesión:</strong
+        > Configura tu sistema para bloquear la cuenta después de un número determinado
+        de intentos fallidos de inicio de sesión, lo que dificulta los ataques de
+        fuerza bruta.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Monitorea el acceso:</strong
+        > Usa herramientas de monitoreo para detectar patrones inusuales de acceso,
+        como una gran cantidad de intentos fallidos, que podrían indicar un ataque
+        de fuerza bruta.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Uso de CAPTCHAs:</strong
+        > Implementa un CAPTCHA en las pantallas de inicio de sesión para evitar
+        que los ataques automatizados de fuerza bruta tengan éxito.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Recursos Adicionales sobre Ataques de Fuerza Bruta
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <a
+          href="https://www.kaspersky.es/resource-center/definitions/brute-force-attack"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Karspersky sobre Ataques de Fuerza Bruta</a
+        >
+      </li>
+    </ul>
+  </section>
+</Layout>
+
+<Footer />

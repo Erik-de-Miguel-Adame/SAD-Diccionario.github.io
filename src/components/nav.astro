@@ -2,7 +2,9 @@
 import LinkNav from "./linkNav.astro";
 ---
 
-<nav class="bg-violet-600 dark:bg-pink-600 flex justify-start items-center text-white relative">
+<nav
+  class="bg-violet-600 dark:bg-pink-600 flex justify-start items-center text-white relative"
+>
   <button
     id="abrirMenu"
     class="text-4xl md:hidden p-4"
@@ -21,7 +23,7 @@ import LinkNav from "./linkNav.astro";
   </button>
   <ul
     id="menu"
-    class="menu hidden md:flex md:flex-wrap flex-col md:flex-row justify-center items-center fixed top-0 left-0  w-full h-full bg-black md:bg-transparent md:w-auto md:h-auto md:static transition-all duration-300 ease-in-out py-20 md:py-0 overflow-auto"
+    class="menu hidden md:flex md:flex-wrap flex-col md:flex-row justify-center items-center fixed top-0 left-0 w-full h-full bg-black md:bg-transparent md:w-auto md:h-auto md:static transition-all duration-300 ease-in-out py-20 md:py-0 overflow-auto"
   >
     <LinkNav href="/" title="Inicio" />
     <LinkNav href="/manual" title="Manual" />
@@ -31,10 +33,12 @@ import LinkNav from "./linkNav.astro";
     <LinkNav href="/manual/backdoors" title="Backdoors" />
     <LinkNav href="/manual/spyware" title="Spyware" />
     <LinkNav href="/manual/stealers" title="Stealers" />
-    <LinkNav href="/manual/Koobface" title="Koobface" />
     <LinkNav href="/manual/Botnet" title="Botnet" />
-    <LinkNav href="/manual/Ataque de fuerza bruta" title="Ataque de fuerza bruta" />
-    <LinkNav href="/manual/noticias" title="Noticias" />
+    <LinkNav
+      href="/manual/Ataque de fuerza bruta"
+      title="Ataque de fuerza bruta"
+    />
+    <LinkNav href="/manual/koobface" title="Koobface" />
   </ul>
 </nav>
 

@@ -1,0 +1,118 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+import Header from "../../../components/header.astro";
+import imgKoobface from "../../../assets/img/manual/koobface.webp";
+---
+
+<Layout title="Koobface">
+  <Header subTitulo="El Malware Koobface" src={imgKoobface.src} alt="header" />
+  <Nav />
+  <section
+    id="koobface"
+    class="mb-12 p-4 m-4 bg-white dark:bg-gray-900 rounded-lg shadow-lg"
+  >
+    <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
+      ¿Qué es Koobface?
+    </h2>
+    <p class="leading-relaxed text-gray-800 dark:text-gray-200">
+      Koobface es un malware que se propagó principalmente a través de redes
+      sociales como Facebook, MySpace, y otras plataformas sociales populares.
+      Su objetivo principal era infectar computadoras y robar información
+      personal, como credenciales de inicio de sesión, datos bancarios y otros
+      detalles privados de los usuarios.
+    </p>
+    <p class="leading-relaxed text-gray-800 dark:text-gray-200 mt-4">
+      Este malware se distribuía principalmente mediante enlaces maliciosos que
+      se enviaban a través de mensajes privados en redes sociales, invitando a
+      los usuarios a hacer clic en ellos para ver videos o contenido
+      interesante, lo que en realidad desencadenaba la instalación del malware.
+    </p>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Características de Koobface
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600">Red de Bots:</strong>
+        Koobface era parte de una botnet, lo que significa que las computadoras infectadas
+        se utilizaban para realizar ataques cibernéticos sin el conocimiento del
+        usuario.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Robo de Información:</strong
+        > Koobface recopilaba credenciales de inicio de sesión, información bancaria
+        y otros datos privados almacenados en las computadoras infectadas.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600">Propagación:</strong>
+        El malware se propagaba principalmente a través de mensajes enviados por
+        las cuentas infectadas, lo que aumentaba la posibilidad de infectar a más
+        usuarios.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600">Persistencia:</strong
+        > Koobface se aseguraba de mantenerse activo en el sistema, utilizando varias
+        técnicas para evitar la detección y eliminación.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Funciona Koobface
+    </h3>
+    <p class="leading-relaxed text-gray-800 dark:text-gray-200">
+      Koobface utilizaba técnicas de ingeniería social para engañar a los
+      usuarios y hacer que hicieran clic en enlaces maliciosos. Estos enlaces
+      solían llevar a páginas web falsas que se veían legítimas, pero en
+      realidad alojaban el malware. Una vez que el usuario hacía clic en el
+      enlace, el virus se descargaba en su computadora, lo que permitía a los
+      atacantes controlar el sistema y robar información sensible.
+    </p>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Protegerse de Koobface
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Mantén tu software actualizado:</strong
+        > Asegúrate de que tanto el sistema operativo como los navegadores estén
+        siempre actualizados con los últimos parches de seguridad.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Desconfía de enlaces sospechosos:</strong
+        > Evita hacer clic en enlaces recibidos por mensaje privado en redes sociales
+        o correos electrónicos no solicitados.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Usa un antivirus:</strong
+        > Utiliza un programa antivirus confiable que pueda detectar y eliminar malware
+        antes de que cause daños.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >No descargues software de fuentes no confiables:</strong
+        > Evita descargar programas de sitios web desconocidos o de dudosa reputación.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Recursos Adicionales sobre Koobface
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <a
+          href="https://protecciondatos-lopd.com/empresas/koobface/"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Koobface, el virus que ataca a usuarios de las redes sociales</a
+        >
+      </li>
+    </ul>
+  </section>
+</Layout>
+
+<Footer />

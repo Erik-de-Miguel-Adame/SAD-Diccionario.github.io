@@ -1,0 +1,173 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/nav.astro";
+import Footer from "../../../components/footer.astro";
+import Header from "../../../components/header.astro";
+import imgBotnet from "../../../assets/img/manual/botnet.webp";
+---
+
+<Layout title="Botnet">
+  <Header subTitulo="¿Qué es una Botnet?" src={imgBotnet.src} alt="header" />
+  <Nav />
+  <section
+    id="botnet"
+    class="mb-12 p-4 m-4 bg-white dark:bg-gray-900 rounded-lg shadow-lg"
+  >
+    <h2 class="text-2xl text-violet-600 dark:text-pink-600 mb-4 underline">
+      ¿Qué es una Botnet?
+    </h2>
+    <p class="leading-relaxed text-gray-800 dark:text-gray-200">
+      Una **Botnet** es una red de computadoras infectadas por malware que son
+      controladas de manera remota por un atacante, conocido como el "botmaster"
+      o "zombiebot". Estas computadoras comprometidas, llamadas **bots**, pueden
+      ser utilizadas para realizar diversas actividades maliciosas, como lanzar
+      ataques DDoS, enviar spam o robar información confidencial.
+    </p>
+    <p class="leading-relaxed text-gray-800 dark:text-gray-200 mt-4">
+      Las botnets se propagan principalmente mediante la infección de
+      computadoras a través de malware, que puede ser distribuido a través de
+      correos electrónicos fraudulentos, sitios web comprometidos o software
+      infectado. Una vez que una computadora está infectada, el atacante puede
+      tomar control de ella sin el conocimiento del usuario.
+    </p>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Características de una Botnet
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Red Distribuida:</strong
+        > Una botnet está formada por una gran cantidad de dispositivos comprometidos
+        distribuidos por todo el mundo, lo que la hace difícil de detectar y erradicar.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Control Remoto:</strong
+        > El atacante puede controlar las computadoras infectadas a través de comandos
+        remotos, lo que le permite orquestar ataques sin ser detectado.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600">Explotación:</strong>
+        Las botnets pueden ser utilizadas para realizar actividades maliciosas como
+        robo de información, fraude, y lanzar ataques como DDoS, entre otros.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Escalabilidad:</strong
+        > Las botnets pueden crecer de manera masiva, lo que les permite lanzar ataques
+        a gran escala, como DDoS, que pueden afectar a grandes infraestructuras.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Funciona una Botnet
+    </h3>
+    <p class="leading-relaxed text-gray-800 dark:text-gray-200">
+      Una vez que un dispositivo se infecta con un malware, el botmaster puede
+      enviar comandos al dispositivo para realizar diversas tareas maliciosas.
+      Estos comandos pueden incluir desde robar datos personales hasta lanzar
+      ataques masivos como el **DDoS** (Denegación de Servicio Distribuida). El
+      control de las botnets es a menudo descentralizado, y pueden usar una
+      infraestructura de servidores C&C (Comando y Control) para gestionar la
+      red de bots.
+    </p>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Tipos de Botnets
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Botnets Centralizadas:</strong
+        > Utilizan un único servidor C&C para controlar todos los bots de la red.
+        Si este servidor es desactivado, la botnet pierde el control.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Botnets Descentralizadas:</strong
+        > En lugar de depender de un servidor central, utilizan una red distribuida
+        de nodos que facilita la resiliencia de la botnet al no depender de un solo
+        punto de falla.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Botnets de IoT (Internet de las Cosas):</strong
+        > Estas botnets están formadas por dispositivos de IoT como cámaras, routers
+        y otros dispositivos conectados a Internet, los cuales suelen tener una seguridad
+        débil.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Identificar una Botnet
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Rendimiento lento:</strong
+        > Si tu computadora se vuelve inusualmente lenta o sus recursos parecen agotarse
+        sin razón aparente, podría ser un indicio de que es parte de una botnet.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Actividad inusual en la red:</strong
+        > Un aumento en el tráfico de red, especialmente cuando no estás utilizando
+        activamente la computadora, puede ser una señal de que está siendo utilizada
+        como bot.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Comportamiento extraño de las aplicaciones:</strong
+        > Si las aplicaciones o programas en tu dispositivo empiezan a comportarse
+        de manera errática o abren conexiones de red sin tu conocimiento, es un indicio
+        de infección.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Cómo Protegerse de las Botnets
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Mantén tu software actualizado:</strong
+        > Asegúrate de que tu sistema operativo y todas tus aplicaciones estén siempre
+        actualizadas para protegerte de vulnerabilidades conocidas.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Instala un buen antivirus:</strong
+        > Utiliza un software antivirus confiable que pueda detectar y eliminar bots
+        y malware antes de que tomen control de tu dispositivo.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Cuidado con los correos electrónicos y enlaces sospechosos:</strong
+        > No hagas clic en enlaces o descargues archivos de correos electrónicos
+        no solicitados, ya que pueden contener malware.
+      </li>
+      <li>
+        <strong class="text-violet-600 dark:text-pink-600"
+          >Usa contraseñas seguras:</strong
+        > Mantén tus contraseñas seguras y evita usar las mismas para varias cuentas.
+        También puedes habilitar la autenticación de dos factores cuando sea posible.
+      </li>
+    </ul>
+
+    <h3 class="text-xl text-violet-600 dark:text-pink-600 mt-6 mb-2">
+      Recursos Adicionales sobre Botnets
+    </h3>
+    <ul class="list-disc list-inside mt-4 text-gray-800 dark:text-gray-200">
+      <li>
+        <a
+          href="https://latam.kaspersky.com/resource-center/threats/botnet-attacks"
+          class="text-violet-600 dark:text-pink-600 hover:underline"
+          >Karspersky sobre Botnets</a
+        >
+      </li>
+    </ul>
+  </section>
+</Layout>
+
+<Footer />
